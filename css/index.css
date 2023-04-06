@@ -1,0 +1,113 @@
+.shortcut{
+    height: 52px;
+    background-color: #333333; 
+}
+.shortcut .wrapper{
+    
+    display: flex;
+    /* 主轴对齐方式，在版心里调 */
+    justify-content: flex-end;
+    height: 52px;
+}
+.shortcut .wrapper ul{
+    /* li中链接换行，要使li的父级ul  flex */
+    display: flex;
+    /* 要使li居中，直接给ul加行高 */
+    line-height: 52px;
+    
+    
+}
+.shortcut li a{
+    /* padding: 上下，左右 */
+    padding: 0 15px;
+    color: #FFFFFF;
+    border-right: #FFFFFF 1px solid;
+    font-size: 14px;
+    
+}
+/* li的最后一个用li选择器 */
+.shortcut li:last-child a{
+    border-right: 0;
+
+}
+.shortcut li span{
+    margin-left: 4px;
+    vertical-align: middle;
+}
+.shortcut .login{
+    color: #5EB69C;
+}
+.header{
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    height: 88px;
+    /* background-color: pink; */
+}
+/* 直接给icon加，给父类加 */
+.header .icon{
+    width: 200px;
+    height: 88px;
+}
+.header .icon a{
+    display: block;
+    font-size: 0;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/logo.png);
+}
+.header .search ul{
+    margin-left: 41px;
+    display: flex;
+    line-height: 88px;
+}
+.header .search li{
+    padding-right: 47px;
+}
+.header .search li a{
+    padding: 10px 0;
+    color: #333333;
+    font-size: 16px;
+}
+.header .search li a:hover{
+    color:#5EB69C;
+    border-bottom: #5EB69C 2px solid;
+}
+.sousuolan{
+    display: flex;
+    margin-left: 28px;
+    margin-top: 33px;
+    margin-right: 45px;
+    width: 170px;
+    height: 34px;
+    border-bottom: #F4F4F4 2px solid;
+}
+/* iconfont加. */
+.sousuolan .iconfont{
+    margin-right: 8px;
+    font-size: 18px;
+
+    color: #CCCCCC;
+}
+/* input有自带宽度，一般情况下，自带宽度生效，将宽设置为0，则flex：1生效 */
+.sousuolan input{
+    width: 0;
+    flex: 1;
+}
+/* 控制placehoder要在input里面控制 */
+.sousuolan input::placeholder{
+    font-size: 16px;
+    color: #CCCCCC;
+}
+
+.cart{
+    margin-top: 32px;
+    position: relative;
+}
+.cart .iconfont{
+    font-size: 24px;
+    color: #CCCCCC;
+}
+.cart i{
+    position: absolute;
+}

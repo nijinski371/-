@@ -110,4 +110,133 @@
 }
 .cart i{
     position: absolute;
+    top: 1px;
+    /* 为了使数字向右边撑开，所以用left右对齐 */
+    left: 15px;
+    padding: 0 6px;
+    height: 15px;
+    background: #E26237;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFEFE;
+    line-height: 15px;
 }
+/* 通栏 */
+
+.footer{
+    height: 580px;
+    background-color: #F5F5F5;
+}
+.footer .service{
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.service ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.service li{
+    display: flex;
+    width: 190px;
+    height: 58px;
+    background: white;
+}
+
+.service li h5{
+    margin-right: 20px;
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/sprite.png);
+}
+
+.service li p{
+    font-size: 28px;
+    line-height: 58px;
+
+}
+/* 第二个li里的h5 */
+.service li:nth-child(2) h5{
+    background-position: 0 -58px;
+}
+
+.service li:nth-child(3) h5{
+    background-position: 0 -116px;
+}
+
+.service li:nth-child(4) h5{
+    background-position: 0 -174px;
+}
+
+/* 帮助中心 */
+.footer .help{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    height: 302.5px;
+
+
+}
+.help .left{
+    display: flex;
+
+}
+.help .left dl{
+    margin-right: 84px;
+}
+
+.help .left dl:last-child{
+    margin-right: 0px;
+}
+.help .left dt{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.help .left dd{
+    margin-bottom: 10px;
+}
+
+.help .left dd a{
+    color: #969696 ;
+
+}
+.help .left .iconfont{
+    color: #5EB69C;
+}
+
+/* footer右边 */
+.help .right ul{
+    display: flex;
+
+}
+.help .right li:first-child{
+    margin-right: 55px;
+}
+
+.help .right .pic{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.help .right p{
+    color: #969696;
+    text-align: center;
+}
+/* 版权区域 */
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    margin-bottom: 10px;
+    color: #A1A1A1;
+    font-size: 16px;
+}
+.copyright p a{
+    margin: 0 5px;
+    color: #A1A1A1;
+}
+
+/* banner区域 */

@@ -141,7 +141,6 @@
     display: flex;
     width: 190px;
     height: 58px;
-    background: white;
 }
 
 .service li h5{
@@ -240,3 +239,230 @@
 }
 
 /* banner区域 */
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    background-color: pink;
+    overflow: hidden;
+}
+.banner .pic{
+    display: flex;
+    width: 3720px;
+}
+
+.banner .subnav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.42);
+    
+}
+.banner .subnav li{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    /* background: pink; */
+    color: #FFFFFF;
+    /* 在整个li范围变成小手 */
+    cursor: pointer;
+
+}
+
+.banner .subnav li a{
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+.banner .subnav li .classify{
+    margin-right: 14px;
+    font-size: 16px;
+
+}
+
+.banner .subnav li .iconfont{
+    font-size: 14px;
+}
+.banner .subnav li:hover{
+    background-color: #00BE9A;
+}
+
+/* 圆点指示器 */
+.banner ol{
+    display: flex;
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+}
+.banner ol li{
+    margin-left: 8px;
+    width: 22px;
+    height: 22px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border-radius: 50%;
+}
+
+.banner ol i{
+    margin: 4px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner ol .current{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.banner ol .current i{
+    background-color: #fff;
+}
+
+/* 新鲜好物 */
+/* 标题公共样式 */
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 42px;
+    /* background-color: pink; */
+}
+
+.title .left{
+    display: flex;
+}
+
+.title .left h3{
+    font-size: 30px;
+    margin-right: 35px;
+}
+.title .left p{
+    align-self: flex-end;
+    color: #A1A1A1;
+}
+
+.title .right .more{
+    line-height: 42px;
+    color: #A1A1A1;
+}
+.title .right .iconfont{
+    margin-left: 10px;
+}
+
+/* 好物内容，公共样式 */
+.bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.bd ul li{
+    width: 304px;
+    height: 404px;
+    background-color: #EEF9F4;
+}
+.bd li .pic{
+    width: 304px;
+    height: 304px;
+}
+.bd li .txt{
+    text-align: center;
+}
+.bd li h4{
+    margin-top: 18px;
+    margin-bottom: 8.5px;
+    font-size: 20px;
+}
+.goods .bd li p{
+    color: #AA2113;
+}
+
+.goods .bd p span{
+    margin-left: 3px;
+    font-size: 22px;
+}
+
+.recommand .bd li{
+    background-color: #fff;
+}
+.recommand .bd h4{
+    font-size: 20px;
+}
+.recommand .bd p{
+    color: #A1A1A1;
+}
+/* 热门品牌区域 */
+.brand{
+    margin-top: 60px;
+    height: 468px;
+    background-color: #F5F5F5;
+}
+.brand .wrapper{
+    height: 468px;
+    /* background-color: pink; */
+    overflow: hidden;
+}
+.brand .title{
+    position: relative;
+    margin-bottom: 40px;
+}
+.brand .button{
+    position: absolute;
+    display: flex;
+    right: 0px;
+    bottom: -25px;
+}
+.brand .button a{
+    height: 20px;
+    width: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+}
+.brand .button .prev{
+    margin-right: 12px;
+    background-color: #ddd;
+}
+.brand .button .next{
+    background-color: #00BE9A;
+}
+/* 人气推荐 */
+.brand .bd li{
+    width: 244px;
+    height: 306px;
+}
+
+/* 生鲜 */
+.fresh .title{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+/* 标题右部公共部分 */
+.title .right{
+    display: flex;
+}
+.title .right ul{
+    display: flex;
+    margin-top: 10px;
+    margin-right: 58px;
+}
+.title .right ul a{
+    display: block;
+    padding: 0 6px;
+    height: 20px;
+    margin-left: 6px;
+    line-height: 20px;
+    /* background-color: pink; */
+
+}
+.title .right ul .active{
+
+    background-color: #00BE9A;
+    color: #fff;
+}
